@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The ultimate Mau Mau Multiplayer Experience by Tim&Julia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/game.js"></script>
+  </head>
+  <body>
+    <div class="head">
+      <button id="start">Start &spades;</button>
+
+      <button id="pass">Pass</button>
+    </div>
+    <div class="you-are">You are player:</div>
+    <div class="player-x"></div>
+    <div class="wished-suit"></div>
+    <div class="deck">
+      <div class="card" id="topcard"></div>
+      <div class="card" id="deck"></div>
+    </div>
+    <div class="hand"></div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <h3>
+          All your wishes shall come true... as long as they are one of these
+          suits!
+        </h3>
+        <button id="wish-heart">Hearts</button>
+        <button id="wish-diamonds">Diamonds</button>
+        <button id="wish-clubs">Clubs</button>
+        <button id="wish-spades">Spades</button>
+      </div>
+    </div>
+
+    <!-- MODAL-------------------------------------------------------------------------------- -->
+    <div class="chat-modal">
+      <div id="chat">
+        <div id="chat-window">
+          <div id="output"></div>
+        </div>
+        <input type="text" id="name" placeholder="Your Name..." />
+        <input type="text" id="message" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </body>
+</html>

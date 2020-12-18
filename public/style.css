@@ -1,0 +1,95 @@
+#chat {
+  width: 300px;
+}
+
+#output {
+  width: 100%;
+  height: 300px;
+  border: solid black 1px;
+}
+
+.chat-modal {
+  display: none;
+}
+
+/* GAME+************************************************************************************ */
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: forestgreen;
+}
+
+.head {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.deck,
+.hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 130px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#deck {
+  background-color: grey;
+}
+
+.Hearts {
+  background-color: white;
+}
+
+.Clubs {
+  background-color: white;
+}
+
+.Diamonds {
+  background-color: white;
+}
+
+.Spades {
+  background-color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.player-x,
+.wished-suit {
+  text-align: center;
+}
+
+.you-are {
+  text-align: center;
+}
+
+.inactive {
+  border: solid darkslategray 3px;
+}
